@@ -13,6 +13,7 @@
     <h2> Ora Arrivo: {{ $train->hours_end }}</h2>
     <h2>Data Arrivo: {{ $train->date_end }}</h2>
     <h2>{{ $train->code_train }}</h2>
+    <a href="{{ route('trains.show', $house) }}" class="btn btn-primary">View House</a>
 </div>
 @endforeach
 
